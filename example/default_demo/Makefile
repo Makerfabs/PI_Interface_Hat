@@ -12,7 +12,7 @@ OBJ_O = $(patsubst %.c,${DIR_BIN}/%.o,$(notdir ${OBJ_C}))
 USELIB = USE_WIRINGPI_LIB
 DEBUG = -D $(USELIB)
 LIB = -lwiringPi -lm 
-TARGET = wPi_main
+TARGET = defaut_demo
 
 
 CC = gcc
