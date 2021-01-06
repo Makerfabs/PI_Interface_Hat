@@ -15,5 +15,7 @@
 #define _DEMO_H_
 
 void touch_basic(void);
+void lcd_basic(void);
+
 
 #endif

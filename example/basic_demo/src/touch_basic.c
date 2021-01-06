@@ -30,22 +30,23 @@ void touch_screen_display()
     }
 
     // /*1.Create a new image cache named IMAGE_RGB and fill it with white*/
-    Paint_NewImage(BlackImage, LCD_2IN4_WIDTH, LCD_2IN4_HEIGHT, ROTATE_90, WHITE, 16);
+    Paint_NewImage(BlackImage, LCD_2IN4_WIDTH, LCD_2IN4_HEIGHT, 0, WHITE, 16);
     Paint_Clear(WHITE);
+
     // /* GUI */
     DEBUG("Draw Touch Setting...\r\n");
     // /*2.Drawing on the image*/
 
     Paint_DrawPoint(10, 10, BLACK, DOT_PIXEL_4X4, DOT_STYLE_DFT);
-    Paint_DrawString_EN(20, 20, "1", &Font16, WHITE, BLACK);
+    Paint_DrawString_EN(20, 20, "10,10", &Font16, WHITE, BLACK);
     Paint_DrawPoint(230, 10, BLACK, DOT_PIXEL_4X4, DOT_STYLE_DFT);
-    Paint_DrawString_EN(200, 20, "2", &Font16, WHITE, BLACK);
+    Paint_DrawString_EN(160, 20, "230,10", &Font16, WHITE, BLACK);
     Paint_DrawPoint(10, 310, BLACK, DOT_PIXEL_4X4, DOT_STYLE_DFT);
-    Paint_DrawString_EN(20, 300, "3", &Font16, WHITE, BLACK);
+    Paint_DrawString_EN(20, 290, "10,310", &Font16, WHITE, BLACK);
     Paint_DrawPoint(230, 310, BLACK, DOT_PIXEL_4X4, DOT_STYLE_DFT);
-    Paint_DrawString_EN(200, 300, "4", &Font16, WHITE, BLACK);
+    Paint_DrawString_EN(140, 290, "230,310", &Font16, WHITE, BLACK);
     Paint_DrawPoint(120, 160, BLACK, DOT_PIXEL_4X4, DOT_STYLE_DFT);
-    Paint_DrawString_EN(130, 170, "5", &Font16, WHITE, BLACK);
+    Paint_DrawString_EN(100, 170, "120,160", &Font16, WHITE, BLACK);
 
     // /*3.Refresh the picture in RAM to LCD*/
     LCD_2IN4_Display((UBYTE *)BlackImage);
@@ -75,7 +76,7 @@ void touch_screen_getpos()
             LCD_2IN4_FillRect(x - 3, y - 3, x + 3, y + 3, RED);
 
             //Original LCD driver don't support rotation, need transform yoursellf
-            DEBUG("x,y:%d,%d\n", y, 240 - x);
+            DEBUG("x,y:%d,%d\n", x, y);
             DEBUG("pos1,pos2:%d,%d\n", pos1, pos2);
 
             while (xptCheck() == LOW)

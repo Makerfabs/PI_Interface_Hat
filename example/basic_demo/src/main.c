@@ -22,7 +22,10 @@ int main(int argc, char *argv[])
 	LCD_2IN4_Clear(WHITE);
 	LCD_SetBacklight(1010);
 
-	touch_basic();
+	//example for lcd display
+	lcd_basic();
+	//example for touch screen
+	//touch_basic();
 
 	DEV_ModuleExit();
 	return 0;
