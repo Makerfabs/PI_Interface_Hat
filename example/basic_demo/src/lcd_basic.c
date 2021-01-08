@@ -56,11 +56,13 @@ void lcd_basic(void)
 
     DEV_Delay_ms(1000);
 
+    /*
     Paint_SetRotate(ROTATE_90);
     GUI_ReadBmp("./pic/LCD_2inch4.bmp");
     LCD_2IN4_Display((UBYTE *)BlackImage);
 
     DEV_Delay_ms(1000);
+    */
 
     Paint_SetRotate(ROTATE_180);
     GUI_ReadBmp("./pic/LCD_2inch4.bmp");
@@ -68,11 +70,13 @@ void lcd_basic(void)
 
     DEV_Delay_ms(1000);
 
+    /*
     Paint_SetRotate(ROTATE_270);
     GUI_ReadBmp("./pic/LCD_2inch4.bmp");
     LCD_2IN4_Display((UBYTE *)BlackImage);
 
     DEV_Delay_ms(1000);
+    */
 
     /* Module Exit */
     free(BlackImage);

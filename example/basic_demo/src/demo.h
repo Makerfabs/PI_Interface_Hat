@@ -16,6 +16,9 @@
 
 void touch_basic(void);
 void lcd_basic(void);
+void shell_basic(void);
+void sensor_basic(void);
+void control_basic(void);
 
 
 #endif

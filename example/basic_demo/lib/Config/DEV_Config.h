@@ -37,11 +37,11 @@
 #define UDOUBLE uint32_t
 
 //USE wiringPiSetupGpio
-#define LCD_CS 8
+#define LCD_CS 7
 #define LCD_RST 27
 #define LCD_DC 25
 #define LCD_BL 23
-#define XPT_CS 7
+#define XPT_CS 8
 #define XPT_IRQ 24
 
 //LCD

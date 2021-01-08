@@ -23,9 +23,11 @@ int main(int argc, char *argv[])
 	LCD_SetBacklight(1010);
 
 	//example for lcd display
-	lcd_basic();
+	//lcd_basic();
 	//example for touch screen
 	//touch_basic();
+	//example for stereo control
+	control_basic();
 
 	DEV_ModuleExit();
 	return 0;

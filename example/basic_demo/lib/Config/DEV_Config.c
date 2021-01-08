@@ -68,6 +68,7 @@ static void DEV_GPIO_Init(void)
 
     DEV_GPIO_Mode(XPT_CS, 1);
     DEV_GPIO_Mode(XPT_IRQ, 0);
+    
 
     LCD_CS_1;
     LCD_BL_1;
