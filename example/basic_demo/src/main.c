@@ -27,7 +27,9 @@ int main(int argc, char *argv[])
 	//example for touch screen
 	//touch_basic();
 	//example for stereo control
-	control_basic();
+	//control_basic();
+	//exampple for button status
+	button_basic();
 
 	DEV_ModuleExit();
 	return 0;
