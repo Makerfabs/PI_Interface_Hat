@@ -29,7 +29,9 @@ int main(int argc, char *argv[])
 	//example for stereo control
 	//control_basic();
 	//exampple for button status
-	button_basic();
+	//button_basic();
+	//exampple for hc-sr04 sensor 
+	sensor_basic();
 
 	DEV_ModuleExit();
 	return 0;
