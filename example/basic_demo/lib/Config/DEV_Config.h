@@ -17,6 +17,7 @@
 
 #include <wiringPi.h>
 #include <wiringPiSPI.h>
+#include <wiringPiI2C.h>
 #include <softPwm.h>
 
 

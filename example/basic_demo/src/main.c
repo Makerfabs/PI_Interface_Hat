@@ -31,7 +31,9 @@ int main(int argc, char *argv[])
 	//exampple for button status
 	//button_basic();
 	//exampple for hc-sr04 sensor 
-	sensor_basic();
+	//sensor_basic();
+	//exampple for ADC
+	adc_basic();
 
 	DEV_ModuleExit();
 	return 0;
