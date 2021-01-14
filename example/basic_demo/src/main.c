@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	//example for lcd display
 	//lcd_basic();
 	//example for touch screen
-	//touch_basic();
+	touch_basic();
 	//example for stereo control
 	//control_basic();
 	//exampple for button status
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	//exampple for hc-sr04 sensor 
 	//sensor_basic();
 	//exampple for ADC
-	adc_basic();
+	//adc_basic();
 
 	DEV_ModuleExit();
 	return 0;
