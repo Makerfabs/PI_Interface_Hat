@@ -54,7 +54,7 @@ void button_status()
 {
 
     DEBUG("Please press...\r\n");
-    int button_pin = 16;
+    int button_pin = 12;    //GPIO 26
     DEV_GPIO_Mode(button_pin, INPUT);
 
     while (1)
