@@ -41,8 +41,10 @@ int main(int argc, char *argv[])
 	//adc_basic();
 	//example for use ws2812 led
 	//ws2812_basic();
-	//example for use ws2812 led
-	sgp30_basic();
+	//example for use co2 sensor
+	//sgp30_basic();
+	//example for use relay
+	relay_basic();
 
 	DEV_ModuleExit();
 	return 0;
