@@ -40,7 +40,9 @@ int main(int argc, char *argv[])
 	//exampple for ADC
 	//adc_basic();
 	//example for use ws2812 led
-	ws2812_basic();
+	//ws2812_basic();
+	//example for use ws2812 led
+	sgp30_basic();
 
 	DEV_ModuleExit();
 	return 0;

@@ -22,6 +22,7 @@ void control_basic(void);
 void button_basic(void);
 void adc_basic(void);
 void ws2812_basic(void);
+void sgp30_basic(void);
 
 
 #endif

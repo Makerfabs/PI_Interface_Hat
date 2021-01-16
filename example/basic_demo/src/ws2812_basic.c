@@ -8,5 +8,5 @@
 void ws2812_basic(void)
 {
     //!!!First need run : sudo pip3 install rpi_ws281x
-    system("python ./py/ws2812_test.py");
+    system("sudo python3 ./py/ws2812_test.py");
 }
