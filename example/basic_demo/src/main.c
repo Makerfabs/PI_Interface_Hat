@@ -38,7 +38,9 @@ int main(int argc, char *argv[])
 	//exampple for hc-sr04 sensor
 	//sensor_basic();
 	//exampple for ADC
-	adc_basic();
+	//adc_basic();
+	//example for use ws2812 led
+	ws2812_basic();
 
 	DEV_ModuleExit();
 	return 0;

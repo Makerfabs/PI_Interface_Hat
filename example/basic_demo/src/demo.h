@@ -21,6 +21,7 @@ void sensor_basic(void);
 void control_basic(void);
 void button_basic(void);
 void adc_basic(void);
+void ws2812_basic(void);
 
 
 #endif
