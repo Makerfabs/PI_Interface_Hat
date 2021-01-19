@@ -44,7 +44,10 @@ int main(int argc, char *argv[])
 	//example for use co2 sensor
 	//sgp30_basic();
 	//example for use relay
-	relay_basic();
+	//relay_basic();
+
+	//for debug
+	touch_debug();
 
 	DEV_ModuleExit();
 	return 0;

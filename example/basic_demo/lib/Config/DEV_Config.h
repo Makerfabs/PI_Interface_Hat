@@ -46,9 +46,11 @@
 #define XPT_IRQ 24
 
 //LCD
-#define LCD_CS_0 DEV_GPIO_Mode(LCD_CS,1);DEV_Digital_Write(LCD_CS, 0)   
-//#define LCD_CS_1 DEV_Digital_Write(LCD_CS, 1)   
-#define LCD_CS_1 DEV_Digital_Write(LCD_CS, 1);DEV_GPIO_Mode(LCD_CS,0)
+//#define LCD_CS_0 DEV_GPIO_Mode(LCD_CS,1);DEV_Digital_Write(LCD_CS, 0)     
+//#define LCD_CS_1 DEV_Digital_Write(LCD_CS, 1);DEV_GPIO_Mode(LCD_CS,0)
+
+#define LCD_CS_0 DEV_Digital_Write(LCD_CS, 0)
+#define LCD_CS_1 DEV_Digital_Write(LCD_CS, 1) 
 
 #define LCD_RST_0 DEV_Digital_Write(LCD_RST, 0)
 #define LCD_RST_1 DEV_Digital_Write(LCD_RST, 1)

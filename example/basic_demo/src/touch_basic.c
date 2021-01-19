@@ -58,6 +58,13 @@ void touch_screen_display()
 
 void touch_screen_getpos()
 {
+    DEBUG("Init xpt2046...\r\n");
+    int default_pos[4][2] = {
+        {3384, 2944},
+        {28344, 2944},
+        {3384, 28328},
+        {28344, 28328}};
+    XPT_set(default_pos);
     DEBUG("Please press...\r\n");
     int i = 0;
     while (1)

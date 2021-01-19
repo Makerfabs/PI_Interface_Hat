@@ -279,6 +279,7 @@ void LCD_2IN4_Display(UBYTE *image)
 	for (i = 0; i < LCD_2IN4_HEIGHT; i++)
 	{
 		DEV_SPI_Write_nByte((UBYTE *)image + LCD_2IN4_WIDTH * 2 * i, LCD_2IN4_WIDTH * 2);
+		//LCD_write_nByte((UBYTE *)image + LCD_2IN4_WIDTH * 2 * i, LCD_2IN4_WIDTH * 2);
 	}
 	LCD_CS_1;
 }
@@ -405,4 +406,13 @@ void LCD_2IN4_img(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UBYTE *ima
 		DEV_SPI_Write_nByte((UBYTE *)image + LCD_2IN4_WIDTH * 2 * i + Xstart * 2, (Xend - 1 - Xstart) * 2);
 	}
 	LCD_CS_1;
+}
+
+void LCD_write_nByte(uint8_t *pData, uint32_t Len)
+{
+	/*
+	uint32_t i;
+	for (i = 0; i < Len; i++)
+		LCD_2IN4_WriteData_Byte(*(pData + i));
+		*/
 }

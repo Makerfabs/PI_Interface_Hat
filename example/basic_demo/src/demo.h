@@ -24,5 +24,7 @@ void adc_basic(void);
 void ws2812_basic(void);
 void sgp30_basic(void);
 void relay_basic(void);
+void touch_debug(void);
+
 
 #endif
