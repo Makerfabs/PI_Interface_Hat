@@ -44,6 +44,8 @@ void recorder_display()
 
     //Titile
     Paint_DrawString_EN(10, 10, "Recorder", &Font24, WHITE, BLACK);
+    Paint_DrawString_EN(10, 40, "Record 5 sencond.", &Font16, WHITE, BLACK);
+    Paint_DrawString_EN(10, 60, "And playback", &Font16, WHITE, BLACK);
 
     //Back button
     Paint_DrawRectangle(280, 200, 319, 239, RED, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
@@ -98,25 +100,29 @@ void recorder_control()
 //Button 1 function
 void recorder_button1()
 {
-    system("ls -l");
-    recorder_count();
+    system("arecord  -c 2 -r 16000 -f S16_LE -Dhw:0,0 -d 5 result.wav");
+    //recorder_count();
     while (xptCheck() == LOW)
     {
+        DEBUG("Get press\n");
         DEV_Delay_ms(10);
     }
     DEV_Delay_ms(1000);
+    DEBUG("Button over\n");
 }
 
 //Button 2 function
 void recorder_button2()
 {
-    system("tree ./");
-    recorder_count();
+    system("aplay result.wav");
+    //recorder_count();
     while (xptCheck() == LOW)
     {
+        DEBUG("Get press\n");
         DEV_Delay_ms(10);
     }
     DEV_Delay_ms(1000);
+    DEBUG("Button over\n");
 }
 
 void recorder_count()

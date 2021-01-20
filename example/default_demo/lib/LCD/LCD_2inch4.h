@@ -50,5 +50,7 @@ void LCD_2IN4_ClearWindow(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend,UWO
 
 void LCD_2IN4_img(UWORD Xstart, UWORD Ystart, UWORD Xend, UWORD Yend, UBYTE *image);
 
+void LCD_write_nByte(uint8_t *pData, uint32_t Len);
+
 
 #endif

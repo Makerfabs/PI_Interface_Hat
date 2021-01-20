@@ -22,16 +22,10 @@ int main(int argc, char *argv[])
 	LCD_2IN4_Clear(WHITE);
 	LCD_SetBacklight(1010);
 
-	//开机动画
-	//anime();
-	anime_test2();
-	//while (1)
-		
-		//anime_test();
+	//Boot animation
+	anime();
 
-	//触屏校准
-
-	//菜单界面
+	//Main menu
 	menu();
 
 	DEV_ModuleExit();

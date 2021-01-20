@@ -75,7 +75,7 @@ void menu(void)
 void main_menu()
 {
     DEBUG("main_menu\n");
-    //界面显示
+
     main_menu_display();
 
     while (1)
@@ -85,7 +85,6 @@ void main_menu()
             return;
     }
 
-    //按钮等待
     return;
 }
 

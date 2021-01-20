@@ -96,9 +96,9 @@ void sensor_control()
 
 void sensor_read(char *value)
 {
-    system("python ./sensor/dht11_example.py");
+    system("python ./py/dht11_example.py");
     FILE *file = NULL;
-    file = fopen("./sensor/dht11.temp", "r");
+    file = fopen("./py/dht11.temp", "r");
 
     fgets(value, 80, file);
     printf("%s\n", value);

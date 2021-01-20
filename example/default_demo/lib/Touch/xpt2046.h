@@ -6,7 +6,7 @@
 #define T_LENGTH 320
 #define T_WIDE 32768.0
 
-#define T_FLAG 24
+#define T_FLAG XPT_IRQ
 
 #define T_ROTATE_0 0
 #define T_ROTATE_90 1
