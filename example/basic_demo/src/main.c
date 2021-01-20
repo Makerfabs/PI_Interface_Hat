@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
 	//example for lcd display
 	//lcd_basic();
 	//example for touch screen
-	//wiringPiSetupGpio();
 	//touch_basic();
 	//example for stereo control
 	//control_basic();
