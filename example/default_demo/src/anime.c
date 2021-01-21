@@ -46,7 +46,7 @@ void anime(void)
         LCD_2IN4_img(40, 180, 160 , 240, (UBYTE *)BlackImage);
         //LCD_2IN4_Display((UBYTE *)BlackImage);
     }
-    DEV_Delay_ms(3000);
+    system("aplay ./open_pic/hello.wav");
 
     /* Module Exit */
     free(BlackImage);
