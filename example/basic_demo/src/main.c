@@ -46,7 +46,9 @@ int main(int argc, char *argv[])
 	//relay_basic();
 
 	//for debug
-	touch_debug();
+	//touch_debug();
+	//ASR test
+	asr_control_basic();
 
 	DEV_ModuleExit();
 	return 0;
