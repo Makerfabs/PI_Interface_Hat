@@ -19,6 +19,7 @@ void anime(void)
         printf("Failed to apply for black memory...\r\n");
         exit(0);
     }
+    system("amixer set Master 100%");
 
     pthread_t thread1;
     pthread_create(&thread1, NULL, (void *)&system, "aplay ./open_pic/hello.wav");

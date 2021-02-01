@@ -7,12 +7,11 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 # GPIO.cleanup()
 
-# read data using Pin GPIO21
-instance = dht11.DHT11(pin=22)
+instance = dht11.DHT11(pin=6)
 
 num = 0
 
-filename = "./sensor/dht11.temp"
+filename = "./py/dht11.temp"
 
 with open(filename, 'w') as f:
 
