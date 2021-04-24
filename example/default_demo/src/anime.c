@@ -19,10 +19,10 @@ void anime(void)
         printf("Failed to apply for black memory...\r\n");
         exit(0);
     }
-    system("amixer set Master 100%");
+    system("amixer set Master 83%");
 
     pthread_t thread1;
-    pthread_create(&thread1, NULL, (void *)&system, "aplay ./open_pic/hello.wav");
+    //pthread_create(&thread1, NULL, (void *)&system, "aplay ./open_pic/hello.wav");
 
     // /*1.Create a new image cache named IMAGE_RGB and fill it with white*/
     Paint_NewImage(BlackImage, LCD_2IN4_WIDTH, LCD_2IN4_HEIGHT, 0, WHITE, 16);
