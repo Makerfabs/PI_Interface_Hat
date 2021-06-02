@@ -2,14 +2,17 @@
 
 ```c++
 /*
-Version:		V1.0
+Version:		V2.0
 Author:			Vincent
 Create Date:	2021/1/6
 Note:
+	2021/6/2 V2.0 : Add product link and guide link.
 	
 */
 ```
-[toc]
+
+
+![main](md_pic/main.jpg)
 
 # Makerfabs
 
@@ -21,33 +24,51 @@ Note:
 
 ## Intruduce
 
-It is an integrated Raspberry Pi Zero terminal with a touch screen, speaker and microphone. It contain 3.2" ILI9341 TFT with XPT2046 touch screen. Based on the WM8960 audio IC, you can record and play sound through the speaker.  
+### Product Link: [Raspberry Pi Embedded System Development Kit](https://www.makerfabs.com/raspberry-pi-embedded-system-development-kit.html)
+
+### Guide Link: [Pi-Interface-Hat-Guide-V1-5.pdf](https://www.makerfabs.com/desfile/files/Pi-Interface-Hat-Guide-V1-5.pdf)
+
+This Kit is composed of Makerfabs Raspberry Pi embedded system Development Platform and 8 Makerfabs Mabee modules, for lite application prototyping based on PI.
+
+The Raspberry Pi has been used in a wide array of digital maker projects, and there has been a huge amount of Raspberry Pi expansion/hats on the market, to help users learn/use the Raspberry PI in applications. This Makerfabs Embedded system development platform could the most special, for make it true for the users creating an embedded system application with PI, suitable for lite PI applications.
 
 ## Feature
 
-- LCD 3.2 inch ILI9341 TFT-LCD. The resolution is 320*240. 
-- XPT2046 is A 4-wire resistive touch screen control circuit with SPI interface.
-- WM8960, the low power, high-quality stereo CODEC.
-- 2 analog microphones.
-- More than 1 meters radius voice capture
-- 3W power speaker.
-- Eight extension interfaces. Such as UART, SPI, I2C, GPIO and 4 channel ADC input.
+- Raspberry pi zero W, 1GHz single-core CPU, 512MB RAM, Micro USB OTG port, Mini HDMI port, CSI camera connector, wireless LAN, and Bluetooth
+- 3.2inch display, 320x240, ili9341 driver with SPI
+- Resistive touch screen, XPT2046 controller
+- Speaker
+- 3.5mm audio jack
+- Stereo Codec with Class D Speaker Driver: WM8960
+- MEMS Mic*2: AOS3729A-T42-NXC
+- Hardware expandable: I2C port, GPIO port, UART port
+- ADC port：ADS1115
+- Type-C USB power or battery power
+- Support chargeable and 1A Maximum charging current
+- Overcharge and over-discharge protection
+- Size: 94mm * 80mm * 24mm
 
 ### Front:
 
-![front](md_pic/front~1.jpg)
+![front](md_pic/front.jpg)
 
 ### Back:
-![back](md_pic/back~1.jpg)
+![back](md_pic/back.jpg)
 
 
 # Example
 
 ## Equipment list
 
-- PI Interface Hat
-- Raspberry official camera.
-- Senor a,b,c.
+- Raspberry PI Embedded system Development Platform(Pi Zero W) with Case
+- Mabee_Temperature& Humidity DHT11
+- Mabee_Button
+- Mabee_Relay_10A
+- Mabee_Slide Potentimeter
+- Mabee_WS2812_12bit
+- 
+- Mabee_Servo SG90
+- Mabee_SGP30 Air Quality Sensor Breakout - VOC and eCO2Mabee_HC-SR04 Ultrasonic Range Measurement Module
 
 ## Compiler Options
 
@@ -58,6 +79,12 @@ It is an integrated Raspberry Pi Zero terminal with a touch screen, speaker and 
 
 - ILI9341 driver is changed from waveshare, add local refresh and some other functions. [Waveshare Wiki](https://www.waveshare.net/wiki/2.4inch_LCD_Module)
 - Voice card driver is from Seeed. [seeed-voicecard](https://github.com/respeaker/seeed-voicecard)
+
+## V2.0 ATTATION!!!
+
+**Below are instructions for older versions, and for versions on sale please refer to Guide**
+
+Guide Link: [Pi-Interface-Hat-Guide-V1-5.pdf](https://www.makerfabs.com/desfile/files/Pi-Interface-Hat-Guide-V1-5.pdf)
 
 ## Example List
 The program shipped out of the factory is default_demo. Basic_demo includes basic picture display, touch screen usage, camera control, etc. 
