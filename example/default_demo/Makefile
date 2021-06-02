@@ -11,7 +11,7 @@ OBJ_O = $(patsubst %.c,${DIR_BIN}/%.o,$(notdir ${OBJ_C}))
 
 USELIB = USE_WIRINGPI_LIB
 DEBUG = -D $(USELIB)
-LIB = -lwiringPi -lm 
+LIB = -lwiringPi -lm -lpthread
 TARGET = defaut_demo
 
 

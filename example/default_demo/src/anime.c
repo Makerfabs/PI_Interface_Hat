@@ -8,6 +8,7 @@
 #include <stdio.h>  //printf()
 #include <stdlib.h> //exit()
 #include <signal.h> //signal()
+#include <pthread.h>
 
 void anime(void)
 {
@@ -18,6 +19,10 @@ void anime(void)
         printf("Failed to apply for black memory...\r\n");
         exit(0);
     }
+    system("amixer set Master 83%");
+
+    pthread_t thread1;
+    //pthread_create(&thread1, NULL, (void *)&system, "aplay ./open_pic/hello.wav");
 
     // /*1.Create a new image cache named IMAGE_RGB and fill it with white*/
     Paint_NewImage(BlackImage, LCD_2IN4_WIDTH, LCD_2IN4_HEIGHT, 0, WHITE, 16);
@@ -32,7 +37,7 @@ void anime(void)
         sprintf(open_pic, "./open_pic/kj%d.bmp", i);
         Paint_Clear(WHITE);
         GUI_ReadBmp((const char *)open_pic);
-        LCD_2IN4_img(70, 0, 130 , 180, (UBYTE *)BlackImage);
+        LCD_2IN4_img(70, 0, 130, 180, (UBYTE *)BlackImage);
         //LCD_2IN4_Display((UBYTE *)BlackImage);
     }
 
@@ -43,9 +48,10 @@ void anime(void)
         sprintf(open_pic, "./open_pic/kj%d.bmp", i);
         Paint_Clear(WHITE);
         GUI_ReadBmp((const char *)open_pic);
-        LCD_2IN4_img(40, 180, 160 , 240, (UBYTE *)BlackImage);
+        LCD_2IN4_img(40, 180, 160, 240, (UBYTE *)BlackImage);
         //LCD_2IN4_Display((UBYTE *)BlackImage);
     }
+    
     system("aplay ./open_pic/hello.wav");
 
     /* Module Exit */

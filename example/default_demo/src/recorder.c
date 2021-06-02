@@ -9,6 +9,7 @@
 #include <stdio.h>  //printf()
 #include <stdlib.h> //exit()
 #include <signal.h> //signal()
+#include <pthread.h>
 
 void recorder_display();
 void recorder_control();
@@ -100,13 +101,9 @@ void recorder_control()
 //Button 1 function
 void recorder_button1()
 {
-    system("arecord  -c 2 -r 16000 -f S16_LE -Dhw:0,0 -d 5 result.wav");
-    //recorder_count();
-    while (xptCheck() == LOW)
-    {
-        DEBUG("Get press\n");
-        DEV_Delay_ms(10);
-    }
+    pthread_t thread1;
+    pthread_create(&thread1, NULL, (void *)&system, "arecord  -c 2 -r 16000 -f S16_LE -Dhw:0,0 -d 5 result.wav");
+    recorder_count();
     DEV_Delay_ms(1000);
     DEBUG("Button over\n");
 }
@@ -114,13 +111,9 @@ void recorder_button1()
 //Button 2 function
 void recorder_button2()
 {
-    system("aplay result.wav");
-    //recorder_count();
-    while (xptCheck() == LOW)
-    {
-        DEBUG("Get press\n");
-        DEV_Delay_ms(10);
-    }
+    pthread_t thread1;
+    pthread_create(&thread1, NULL, (void *)&system, "aplay result.wav");
+    recorder_count();
     DEV_Delay_ms(1000);
     DEBUG("Button over\n");
 }

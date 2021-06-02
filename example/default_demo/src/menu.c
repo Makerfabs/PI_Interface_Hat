@@ -148,6 +148,8 @@ void main_menu_display()
     }
 
     // /*3.Refresh the picture in RAM to LCD*/
+
+    GUI_ReadBmp("./pic/main.bmp");
     LCD_2IN4_Display((UBYTE *)BlackImage);
 
     free(BlackImage);
