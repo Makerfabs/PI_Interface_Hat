@@ -2,10 +2,11 @@
 
 ```c++
 /*
-Version:		V2.0
+Version:		V3.0
 Author:			Vincent
 Create Date:	2021/1/6
 Note:
+	2021/8/23 v3.0 : Add a CO2 check demo and a Camera demo.
 	2021/6/2 V2.0 : Add product link and guide link.
 	
 */
@@ -135,6 +136,24 @@ sudo ./basic_demo
 	//example for touch screen
 	//touch_basic();
 ```
+
+### TVOC_demo
+
+[Indoor TVOC Reminder With Raspberry Pi](https://www.youtube.com/watch?v=EIFs8n8Zeco)
+
+TVOC in the air is measured by SGP30 sensor. A line chart of TVOC values is displayed on the screen.
+
+Please see the following link for specific usage:
+
+[TVOC-Reminder-With-Raspberry-PI](https://www.instructables.com/TVOC-Reminder-With-Raspberry-PI/)
+
+![tvoc](md_pic/tvoc.jpg)
+
+### Camera_demo
+
+Make a touchscreen controlled Raspberry PI camera.
+
+![Camera](md_pic/camera.jpg)
 
 ## Code Explain
 
